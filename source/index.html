@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <style>
+         html { 
+  background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pxwall.com%2Fwp-content%2Fuploads%2F2019%2F04%2F4K-Ultra-HD-Desktop-Wallpapers.jpg&f=1&nofb=1&ipt=f7c2f1a68097d0549042d96d57033ae9c5e120851335dc8f13bf8f3c185b1e5b&ipo=images") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+        body {
+            font-family: arial;
+        }
+        .task {
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background-color: rgba(255, 255, 255, 0.619);
+        }
+        .task button {
+            height: 40px;
+            border-radius: 0px;
+            border: none;
+            background-color: transparent;
+            transition: 0.2s;
+        }
+        .task button:hover {
+            background-color: rgba(255, 255, 255, 0.376);
+        }
+        .messages {
+            position: fixed;
+            top: 50px;
+            right: 0px;
+            border-radius: 10px 0px 0px 10px;
+            width: 50%;
+            background-color: rgba(255, 255, 255, 0.405);
+            height: auto;
+        }
+        .messages button {
+            height: 10ch;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.529);
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .messages button:hover {
+            background-color: rgba(154, 218, 255, 0.446);
+        }
+        .friendlist-open {
+            position: fixed;
+            left: 3px;
+            bottom: 3px;
+        }
+        .friendlist-open button {
+            font-size: 25px;
+            padding: 10px;
+            border-radius: 10px;
+            border-width: 0px;
+            background-color: rgba(255, 255, 255, 0.529);
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        .friendlist-open button:hover {
+            background-color: rgba(154, 218, 255, 0.446);
+        }
+        .friendlist-close {
+            background-color: transparent;
+            border: none;
+            border-radius: 0px 10px 0px 0px;
+            cursor: pointer;
+            padding: 5px;
+            float: right;
+        }
+        .friendlist-close:hover {
+        background-color: rgba(255, 255, 255, 0.619);
+        }
+        .friendlist {
+            position: fixed;
+            left: 0px;
+            bottom: -210px;
+            height: 200px;
+            width: 20%;
+            border-radius: 0px 10px 0px 0px;
+            background-color: rgba(255, 255, 255, 0.529);
+            transition: 0.2s;
+            padding: 5px;
+        }
+        .email {
+            position: fixed;
+            right: 0px;
+            bottom: 10px;
+            width: 50%;
+            background-color: rgba(255, 255, 255, 0.529);
+            height: 50ch;
+            padding: 10px;
+            border-radius: 10px 0px 0px 10px;
+        }
+        .email-close {
+            border-width: 0px;
+            border-radius: 0px;
+            padding: 5px;
+            cursor: pointer;
+            background-color: white;
+        }
+        .email-close:hover {
+            background-color: rgb(223, 223, 223);
+        }
+        .footernew {
+            background-color: black;
+            height: 1px;
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="task"> <button>Datei</button> <button>Start</button> <button>Senden/Empfangen</button> <button>Ordner</button> <button>Ansicht</button> <button>Hilfe</button> <button style="float: right;">Ausloggen</button></div>
+    <div class="messages"><button style="border-radius: 10px 0px 0px 0px;" onclick="FIRST.style.display='block'">📫 | Willkommen zu email.local 🎉 <br> (～￣▽￣)～ Open your first E-Mail!</button></div>
+    <div class="friendlist" id="FRIENDS">Freundesliste <input placeholder="Suche nach Freunden"><button class="friendlist-close" onclick="FRIENDS.style.transform = 'translate(0px, 200px)'">↓</button></div>
+    <div class="friendlist-open" id="OPEN" onclick="FRIENDS.style.transform = 'translate(0px, -200px)'"><button>📜</button></div>
+    <div class="email">
+        <div class="first-email" style="display: none;" id="FIRST">
+            <button class="email-close" onclick="FIRST.style.display='none'">Schließe diese E-Mail</button> | 26/01/2024
+            <br>
+            <div class="footernew"></div>
+            Hallo, vielen Dank, dass Sie sich bei email.local angemeldet haben und somit erfolgreich sich angemeldet haben. 
+            In dieser E-Mail werde ich Ihnen mehrere Funktionen dieses Webseite präsentieren.
+
+        </div>
+    </div>
+    
+</body>
+
+<script>
+</script>
+
+</html>
