@@ -143,6 +143,11 @@
             border-radius: 0px;
             border-width: 0px;
             padding: 5px;
+            transition: 0.2s;
+        }
+        .write input:focus {
+            border-radius: 3px;
+            background-color: rgba(255, 255, 255, 0.748);
         }
         .send {
             border-width: 0px;
@@ -182,10 +187,13 @@
             background-color: rgba(234, 234, 234, 0.759);
             text-decoration: underline;
         }
+        #PROFIL-RESULT {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <div class="task"> <button>Datei</button> <button>Start</button> <button onclick="WRITE.style.display='block'">Schreiben</button> <button>Ordner</button> <button>Ansicht</button> <button>Hilfe</button> <button style="float: right;">Ausloggen</button></div>
+    <div class="task"> <button>Datei</button> <button>Start</button> <button onclick="PROFIL.style.display='block'">Profil</button> <button onclick="WRITE.style.display='block'">Schreiben</button> <button>Ordner</button> <button>Ansicht</button> <button>Hilfe</button> <button style="float: right;">Ausloggen</button></div>
     <div class="messages"><button style="border-radius: 10px 0px 0px 0px;" onclick="FIRST.style.display='block'">📫 | Willkommen zu email.local 🎉 <br> (～￣▽￣)～ Open your first E-Mail!</button></div>
     <div class="friendlist" id="FRIENDS">Freundesliste <input placeholder="Suche nach Freunden"><button class="friendlist-close" onclick="FRIENDS.style.transform = 'translate(0px, 200px)'">↓</button></div>
     <div class="friendlist-open" id="OPEN" onclick="FRIENDS.style.transform = 'translate(0px, -200px)'"><button>📜</button></div>
@@ -210,9 +218,9 @@
             <button class="email-close" onclick="WRITE.style.display='none'">Verwerfe die Nachricht</button>(Die Nachricht wird unterbewusst gespeichert) | 26/01/2024
             <div class="footernew"></div>
             <form action="">
-            <input type="text" placeholder="Empfänger"> <button onclick="CC.style.display='none'" type="button" class="EPB">An</button> <button onclick="CC.style.display='block'" type="button" class="EPB">CC</button>
+            <input type="text" placeholder="Empfänger (User-ID)" maxlength="10" id="ID"> <button onclick="CC.style.display='none'" type="button" class="EPB">An</button> <button onclick="CC.style.display='block'" type="button" class="EPB">CC</button>
             <br>
-            <input type="text" placeholder="CC-Empfänger" style="display: none;" id="CC">
+            <input type="text" placeholder="CC-Empfänger" maxlength="10" style="display: none;" id="CC">
             <br>
             <input type="text" placeholder="Betreff">
             <textarea name="" id="" cols="30" rows="10" placeholder="Hier deine E-Mail..."></textarea>
@@ -220,7 +228,16 @@
             <button type="submit" class="send">Versenden</button> <button class="safe">Speichern</button>
             </form>
         </div>
-        
+        <div class="profil" id="PROFIL" style="display: none;">
+            <button class="email-close" onclick="PROFIL.style.display='none'">Schließe dein Profil</button>
+            
+            <div class="footernew"></div>
+
+            Benutzername : <p id="PROFIL-RESULT">(Benutzername)</p>
+            <br>
+            Deine ID : <p id="PROFIL-RESULT">8TZ5P74KY1 (Beispiel)</p>
+
+        </div>
     
 </body>
 
