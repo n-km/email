@@ -205,7 +205,10 @@
 </head>
 <body>
     <div class="task"> <button>Datei</button> <button>Start</button> <button onclick="PROFIL.style.display='block'">Profil</button> <button onclick="WRITE.style.display='block'">Schreiben</button> <button>Ordner</button> <button onclick="ANSICHT.style.display='block'">Ansicht</button> <button>Hilfe</button> <button style="float: right;">Ausloggen</button></div>
-    <div class="messages"><button style="border-radius: 10px 0px 0px 0px;" onclick="FIRST.style.display='block'">📫 | Willkommen zu email.local 🎉 <br> (～￣▽￣)～ Open your first E-Mail!</button></div>
+    <div class="messages">
+        <button style="border-radius: 10px 0px 0px 0px;" onclick="FIRST.style.display='block'"><h3>📫 | Willkommen zu email.local 🎉</h3>Öffne deine erste E-Mail!</button>
+        <button><h3>2-Faktorauthenfication</h3></button>
+    </div>
     <div class="friendlist" id="FRIENDS">Freundesliste <button class="friendlist-close" onclick="FRIENDS.style.transform = 'translate(0px, 200px)'">↓</button><input placeholder="Suche nach Freunden"></div>
     <div class="friendlist-open" id="OPEN" onclick="FRIENDS.style.transform = 'translate(0px, -200px)'"><button>📜</button></div>
     <div class="email">
@@ -249,7 +252,7 @@
             <div class="footernew"></div>
         </div>
         <div class="ansicht" id="ANSICHT" style="display: none;">
-            <button onclick="ANSICHT.style.display='none'">Schließe Ansicht</button>
+            <button onclick="ANSICHT.style.display='none'" class="email-close">Schließe Ansicht</button>
             <br><br><br>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pxwall.com%2Fwp-content%2Fuploads%2F2019%2F04%2F4K-Ultra-HD-Desktop-Wallpapers.jpg&f=1&nofb=1&ipt=f7c2f1a68097d0549042d96d57033ae9c5e120851335dc8f13bf8f3c185b1e5b&ipo=images" onclick="HTML.style.background = 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pxwall.com%2Fwp-content%2Fuploads%2F2019%2F04%2F4K-Ultra-HD-Desktop-Wallpapers.jpg&f=1&nofb=1&ipt=f7c2f1a68097d0549042d96d57033ae9c5e120851335dc8f13bf8f3c185b1e5b&ipo=images)'">
             <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F7%2F9%2F2%2F1016957-vertical-lion-wallpaper-2560x1600-for-android.jpg&f=1&nofb=1&ipt=6eedaf0127c9182887e4d281c9df4b4cdde2a96f60fcddc84e063303829f1c1d&ipo=images" onclick="HTML.style.background = 'url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F7%2F9%2F2%2F1016957-vertical-lion-wallpaper-2560x1600-for-android.jpg&f=1&nofb=1&ipt=6eedaf0127c9182887e4d281c9df4b4cdde2a96f60fcddc84e063303829f1c1d&ipo=images)'">
