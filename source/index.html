@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.clipartbest.com%2Fcliparts%2Fjcx%2FpzG%2FjcxpzGqki.gif&f=1&nofb=1&ipt=3c642479934e65a4630da3e4c4dbeae80fa3ee9ed4d95dc9b6c0fc7b811c702d&ipo=images">
     <title>Email</title>
     <style>
          html { 
@@ -167,6 +168,20 @@
             background-color: rgb(223, 223, 223);
             text-decoration: underline;
         }
+        .EPB {
+            border-radius: 5px;
+            border-width: 1px;
+            border-style: double;
+            border-color: black;
+            background-color: rgba(255, 255, 255, 0.759);
+            cursor: pointer;
+            padding: 5px;
+            transition: 0.2;
+        }
+        .EPB:hover {
+            background-color: rgba(234, 234, 234, 0.759);
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -195,14 +210,17 @@
             <button class="email-close" onclick="WRITE.style.display='none'">Verwerfe die Nachricht</button>(Die Nachricht wird unterbewusst gespeichert) | 26/01/2024
             <div class="footernew"></div>
             <form action="">
-            <input type="text" placeholder="An Wen geht die E-Mail?">
+            <input type="text" placeholder="Empfänger"> <button onclick="CC.style.display='none'" type="button" class="EPB">An</button> <button onclick="CC.style.display='block'" type="button" class="EPB">CC</button>
             <br>
-            <input type="password" placeholder="Gib dein Passwort ein...">
+            <input type="text" placeholder="CC-Empfänger" style="display: none;" id="CC">
+            <br>
+            <input type="text" placeholder="Betreff">
             <textarea name="" id="" cols="30" rows="10" placeholder="Hier deine E-Mail..."></textarea>
             <br>
             <button type="submit" class="send">Versenden</button> <button class="safe">Speichern</button>
             </form>
-    </div>
+        </div>
+        
     
 </body>
 
