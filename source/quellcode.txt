@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.clipartbest.com%2Fcliparts%2Fjcx%2FpzG%2FjcxpzGqki.gif&f=1&nofb=1&ipt=3c642479934e65a4630da3e4c4dbeae80fa3ee9ed4d95dc9b6c0fc7b811c702d&ipo=images">
     <title>Email</title>
+    //Habe bei Keyframes nur was ausprobiert...
     <style>
         @keyframes sideOn {
             from {
@@ -216,7 +217,7 @@
     </style>
 </head>
 <body>
-    <div class="task"> <button>Datei</button> <button>Start</button> <button onclick="PROFIL.style.display='block'">Profil</button> <button onclick="WRITE.style.display='block'">Schreiben</button> <button>Ordner</button> <button onclick="ANSICHT.style.display='block'">Ansicht</button> <button>Hilfe</button> <a href="quellcode.txt" target="_blank"><button>Quellcode</button></a> <button style="float: right;">Ausloggen</button></div>
+    <div class="task"> <button>Datei</button> <button>Start</button> <button onclick="PROFIL.style.display='block'">Profil</button> <button onclick="WRITE.style.display='block'">Schreiben</button> <button>Ordner</button> <button onclick="ANSICHT.style.display='block'">Ansicht</button> <button>Hilfe</button> <a href="quellcode.txt"><button>Quellcode</button></a> <button style="float: right;">Ausloggen</button></div>
     <div class="messages">
         <button style="border-radius: 10px 0px 0px 0px;" onclick="FIRST.style.display='block'"><h3>📫 | Willkommen zu email.local 🎉</h3>Öffne deine erste E-Mail!</button>
         
@@ -276,3 +277,6 @@
 </script>
 
 </html>
+
+
+---DAS SIND INSGESAMT 278 ZEILEN---
